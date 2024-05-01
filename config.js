@@ -125,7 +125,7 @@
 
 
 		// PROFILE PICTURE URL
-		var config_profile_image_url = "assets/images/person.jpg";
+		var config_profile_image_url = "assets/images/Pink and Brown Circle Elegant  Illustrated Woman Event Manager Logo (2079 x 2600 px).jpg";
 
 
 
@@ -142,7 +142,7 @@
 		// "waves" = IMAGE EFFECT WAVES
 		// "custom" = IMAGE EFFECT CUSTOM
 
-		var config_profile_image_effect = "tech";
+		var config_profile_image_effect = "waves";
 
 
 
@@ -152,7 +152,7 @@
 
 
 		// PROFILE PICTURE HOVER EFFECT MAP INTENSITY
-		var config_profile_image_effect_intensity = 0.3;
+		var config_profile_image_effect_intensity = 1;
 
 
 
@@ -223,12 +223,12 @@
 
 
 				// BACKGROUND COLOR
-				var option_hero_background_asteroids_bg_color = "#E3EADC";
+				var option_hero_background_asteroids_bg_color = "#D3D8CE";
 
 
 
 				// CUBE COLOR
-				var option_hero_background_asteroids_cube_color = "#F1773E";
+				var option_hero_background_asteroids_cube_color = "#492116";
 
 
 
@@ -238,17 +238,17 @@
 
 
 				// SPOTLIGHT COLOR
-				var option_hero_background_asteroids_spotlight_color = "#999";
+				var option_hero_background_asteroids_spotlight_color = "#AC5C27";
 
 
 
 				// SPOTLIGHT INTENSITY
-				var option_hero_background_asteroids_spotlight_intensity = 1;
+				var option_hero_background_asteroids_spotlight_intensity = 5;
 
 
 
 				// POINTLIGHT COLOR
-				var option_hero_background_asteroids_pointlight_color = "#F1773E";
+				var option_hero_background_asteroids_pointlight_color = "#ffffff";
 
 
 
@@ -258,7 +258,7 @@
 				
 
 				// RECTAREALIGHT COLOR
-				var option_hero_background_asteroids_rectarealight_color = "brown";
+				var option_hero_background_asteroids_rectarealight_color = "black";
 
 
 
@@ -324,22 +324,22 @@
 
 
 				// LINE COLOR
-				var option_hero_background_twisted_line_color = "#fff";
+				var option_hero_background_twisted_line_color = "#D3D8CE";
 
 
 
 				// FILL COLOR
-				var option_hero_background_twisted_fill_color = "#212121";
+				var option_hero_background_twisted_fill_color = "#7A3725";
 
 
 
 				// BACKGROUND COLOR
-				var option_hero_background_twisted_bg_color = "#212121";
+				var option_hero_background_twisted_bg_color = "#D3D8CE";
 
 
 
 				// SCENE OPACITY ( 0 - 1.0 )
-				var option_hero_background_twisted_scene_opacity = 0.07;
+				var option_hero_background_twisted_scene_opacity = 0.4;
 
 
 

@@ -118,7 +118,7 @@ h6 {
 }
 
 p {
-    font-size: 3.4rem;
+    font-size: 3.1rem;
     line-height: 1.4em;
     letter-spacing: -0.005em;
     font-weight: 300;
@@ -137,7 +137,7 @@ p.small {
 
 
 p.tag {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     letter-spacing: 0.14em;
     font-weight: 700;
     color: #fff;
@@ -1394,7 +1394,7 @@ _:-ms-fullscreen,
     height: 100%;
     top: 1px;
     z-index: 3;
-
+    border: 1px solid #AC5C27;
     left: 0;
 }
 
@@ -1405,7 +1405,7 @@ _:-ms-fullscreen,
     top: 0;
     left: 0;
     z-index: -2;
-    border: 1px solid #fff;
+    border: 3px solid #AC5C27;
 }
 
 .left-content .inner-content .frame.frame-1 {
@@ -2230,4 +2230,17 @@ _:-ms-fullscreen,
         width: 100%;
     }
 
+}
+
+.about-section {
+    padding-bottom: 26rem;
+}
+
+.introduction, .description {
+    color: white;
+}
+
+.heading {
+    color: #7A3725;
+    font-weight: 600;
 }
