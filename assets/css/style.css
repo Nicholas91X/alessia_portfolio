@@ -1443,6 +1443,7 @@ _:-ms-fullscreen,
 
 .left-content .inner-content .name .seperator-line {
     margin-top: 0.6rem;
+    width: 54rem;
 }
 
 .section-container {
@@ -2243,4 +2244,12 @@ _:-ms-fullscreen,
 .heading {
     color: #7A3725;
     font-weight: 600;
+}
+
+.customer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

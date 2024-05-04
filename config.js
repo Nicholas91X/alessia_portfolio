@@ -268,7 +268,7 @@
 
 
 				// SCENE OPACITY ( 0 - 1.0 )
-				var option_hero_background_asteroids_scene_opacity = 0.15;
+				var option_hero_background_asteroids_scene_opacity = 0.35;
 
 
 

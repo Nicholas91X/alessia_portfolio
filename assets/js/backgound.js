@@ -142,11 +142,22 @@ function asteroidsBackground() {
 
 		}
 
-	} generateParticle(100, 0.5);
+	} generateParticle(300, 0.5);
 
-	sceneGruop.add(particularGruop);
-	scene.add(modularGruop);
-	scene.add(sceneGruop);
+	if (window.innerWidth < 800) {
+		sceneGruop.add(particularGruop);
+		scene.add(modularGruop);
+		scene.add(sceneGruop);
+	} else {
+		particularGruop.position.x += 1.25;
+		particularGruop.position.y -= 0.3;
+		sceneGruop.add(particularGruop);
+		modularGruop.position.x += 1.25
+		modularGruop.position.y -= 0.3
+		scene.add(modularGruop);
+		scene.add(sceneGruop);
+	}
+		
 
 	function mathRandom() {
 
@@ -161,7 +172,7 @@ function asteroidsBackground() {
 
 	function init() {
 
-		for (var i = 0; i < 30; i++) {
+		for (var i = 0; i < 50; i++) {
 
 			var geometry = new THREE.IcosahedronGeometry(1);
 			var material = new THREE.MeshStandardMaterial({ flatShading: THREE.FlatShading, color: option_hero_background_asteroids_cube_color, transparent: false, opacity: 1, wireframe: false });
@@ -183,7 +194,6 @@ function asteroidsBackground() {
 
 			cube.position.set(cube.positionX, cube.positionY, cube.positionZ);
 			modularGruop.add(cube);
-
 		}
 
 	}
@@ -269,9 +279,10 @@ function asteroidsBackground() {
 	init();
 
 	$("#canvas-asteroids").css({
-		"opacity": option_hero_background_asteroids_scene_opacity
+		"opacity": option_hero_background_asteroids_scene_opacity,
+		"width": window.innerWidth
 	});
-	$("body").append('<div class="bg-color" style="background-color:' + option_hero_background_asteroids_bg_color + '"></div>');
+	$("body").append('<div class="bg-color" style="right: 10%;background-color:' + option_hero_background_asteroids_bg_color + '"></div>');
 
 }
 

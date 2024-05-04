@@ -121,7 +121,7 @@
     padding: 2.2rem 5rem 2.2rem 0;
     display: block;
     cursor: pointer;
-    border-bottom: 0.1rem solid #fff;
+    border-bottom: 0.1rem solid #000;
 }
 
 .accordion.pricing-accordion .acc_section .acc_head 
@@ -140,8 +140,8 @@
     -webkit-transform: translateY(-50%) rotate(-45deg);
         -ms-transform: translateY(-50%) rotate(-45deg);
             transform: translateY(-50%) rotate(-45deg);
-    border-left: 0.1rem solid #fff;
-    border-bottom: 0.1rem solid #fff;
+    border-left: 0.1rem solid #000;
+    border-bottom: 0.1rem solid #000;
     -webkit-transition: .1s ease;
     -o-transition: .1s ease;
     transition: .1s ease;
@@ -181,9 +181,15 @@
 
 .seperator-line
 {
-    width: 4rem;
+    width: 50rem;
     height: 0.1rem;
     background: #fff;
+}
+
+@media (max-width: 800px) {
+    .seperator-line {
+        width: 40rem;
+    }
 }
 
 
@@ -225,7 +231,7 @@
 
 .skill-bar .bar
 {
-    background: rgba(255, 255, 255, 0.2);
+    background: #fff;
     height: 0.1rem;
     width: 100%;
     display: block;
@@ -235,7 +241,7 @@
 .skill-bar .bar .fill
 {
     position: absolute;
-    background: #fff;
+    background: #000;
     height: 100%;
     top: 0;
     left: 0;
@@ -818,6 +824,7 @@
     -webkit-transition: .15s;
     -o-transition: .15s;
     transition: .15s;
+    font-size: 30px;
 }
 
 .tabs ul li.active p,
@@ -834,6 +841,25 @@
     }
 
 }
+
+@media (max-width: 350px) {
+    .tabs ul li p{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .tabs ul li p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .tabs ul li p{
+        font-size: 20px;
+    }
+}
+
 
 
 
