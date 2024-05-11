@@ -222,7 +222,7 @@ button {
     font-family: inherit;
     padding: 0;
     margin: 0;
-    height: 8.7rem;
+    height: 6.7rem;
 }
 
 button.button-filled {
@@ -350,23 +350,19 @@ form {
 
 input,
 textarea {
-    display: block;
     width: 100%;
     background: none;
-    border: none;
-    border-bottom: 0.1rem solid #fff;
     font-size: 3.4rem;
     letter-spacing: -0.005em;
     line-height: 1.4em;
     font-weight: 300;
-    border-radius: 0;
     padding: 0;
     color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
-}
-
-input {
-    padding-bottom: 2rem;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: left;
 }
 
 textarea {
@@ -1378,7 +1374,7 @@ _:-ms-fullscreen,
 }
 
 .left-content .inner-content .picture {
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
     position: absolute;
@@ -1532,7 +1528,7 @@ _:-ms-fullscreen,
 }
 
 .mobile .left-content .inner-content .picture-box {
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 .mobile .section-container {
@@ -2252,4 +2248,63 @@ _:-ms-fullscreen,
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.pill-style {
+    color: white; 
+    font-size: 15px;
+}
+
+.p-my-style {
+    color: white;
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+/* Stili di base per il form */
+.form-container {
+    padding: 20px;
+    margin: 40px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Stile per il textarea */
+.form-container textarea {
+    height: 150px;
+    resize: none; /* Impedisce all'utente di modificare le dimensioni del campo di testo */
+}
+
+.form-container button:hover {
+    background-color: #4a54e1; /* Cambia colore al passaggio del mouse */
+}
+
+/* Stile per i messaggi di errore o successo */
+.form-container .message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.form-container .error {
+    color: #d9534f; /* Rosso per messaggi di errore */
+}
+
+.form-container .success {
+    color: #5cb85c; /* Verde per messaggi di successo */
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }

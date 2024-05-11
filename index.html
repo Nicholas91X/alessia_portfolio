@@ -35,7 +35,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/elements.css">
     <link rel="stylesheet" type="text/css" href="assets/css/colors.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </head>
 
 <body>
@@ -83,7 +84,7 @@
 
             <!-- MENU ITEMS -->
             <div class="head m-b-2">
-                <p class="small">Menu</p>
+                <p class="small" style="text-decoration: underline;">Menu</p>
             </div>
             <ul class="main-items">
 
@@ -92,6 +93,9 @@
                     </a></li>
                 <li><a class="scroll-to" href="#about"><span class="ti-user"></span>
                         <p class="small">Su di me</p>
+                    </a></li>
+                <li><a class="scroll-to" href="#services"><span class="ti-settings"></span>
+                        <p class="small">Servizi</p>
                     </a></li>
                 <li><a class="scroll-to" href="#resume"><span class="ti-align-left"></span>
                         <p class="small">Curriculum</p>
@@ -102,6 +106,15 @@
                 <li><a class="scroll-to" href="#portfolio"><span class="ti-view-grid"></span>
                         <p class="small">Portfolio</p>
                     </a></li>
+                <li><a class="scroll-to" href="#certificates"><span class="ti-check"></span>
+                        <p class="small">Certificazioni</p>
+                    </a></li>
+                <li><a class="scroll-to" href="#clients"><span class="ti-face-smile"></span>
+                        <p class="small">Clienti</p>
+                    </a></li>
+                <li><a class="scroll-to" href="#faq"><span class="ti-help"></span>
+                        <p class="small">FAQ</p>
+                    </a></li>
                 <li><a class="scroll-to" href="#contact"><span class="ti-comments"></span>
                         <p class="small">Contatti</p>
                     </a></li>
@@ -111,14 +124,23 @@
 
             <!-- SOCIAL ITEMS -->
             <div class="head m-b-2 m-t-7">
-                <p class="small">Social</p>
+                <p class="small" style="text-decoration: underline;">Social</p>
             </div>
             <div class="social-items">
 
+                <div class="item"><a href="#"><span class="ti-linkedin"></span></a></div>
                 <div class="item"><a href="#"><span class="ti-instagram"></span></a></div>
-                <div class="item"><a href="#"><span class="ti-twitter"></span></a></div>
-                <div class="item"><a href="#"><span class="ti-dribbble"></span></a></div>
+                <div class="item"><a href="#"><span class="ti-facebook"></span></a></div>
 
+            </div>
+            <!-- /SOCIAL ITEMS -->
+
+            <!-- SOCIAL ITEMS -->
+            <div class="head m-b-2 m-t-7">
+                <p class="small" style="text-decoration: underline;">Email</p>
+            </div>
+            <div>
+                <a href="mailto:alessiaamoruso39@gmail.com" class="small">alessiaamoruso39@gmail.com</a>
             </div>
             <!-- /SOCIAL ITEMS -->
 
@@ -290,7 +312,7 @@
 
 
                     <!-- SECTION ( SERVICES ) -->
-                    <div class="section" style="padding-bottom:20rem">
+                    <div class="section" style="padding-bottom:20rem" id="services">
 
 
                         <!-- CONTAINER -->
@@ -316,7 +338,8 @@
                                         <div class="icon"></div>
                                     </div>
                                     <div>
-                                        <p>Sviluppo e implementazione di strategie di social media. </p>
+                                        <p class="p-my-style">Sviluppo e implementazione di strategie di social media.
+                                        </p>
                                     </div>
                                 </li>
                                 <!-- /ACCORDION ITEM -->
@@ -328,7 +351,7 @@
                                         <div class="icon"></div>
                                     </div>
                                     <div>
-                                        <p>Pianificazione e creazione di contenuti originali. </p>
+                                        <p class="p-my-style">Pianificazione e creazione di contenuti originali. </p>
                                     </div>
                                 </li>
                                 <!-- /ACCORDION ITEM -->
@@ -340,7 +363,7 @@
                                         <div class="icon"></div>
                                     </div>
                                     <div>
-                                        <p>Gestione di profili aziendali su vari canali social. </p>
+                                        <p class="p-my-style">Gestione di profili aziendali su vari canali social. </p>
                                     </div>
                                 </li>
                                 <!-- /ACCORDION ITEM -->
@@ -352,7 +375,8 @@
                                         <div class="icon"></div>
                                     </div>
                                     <div>
-                                        <p>Monitoraggio delle attività e tendenze sui social media. </p>
+                                        <p class="p-my-style">Monitoraggio delle attività e tendenze sui social media.
+                                        </p>
                                     </div>
                                 </li>
                                 <!-- /ACCORDION ITEM -->
@@ -431,27 +455,29 @@
                                     <p class="color-white m-b-1-5 small">Digital Coach<span
                                             class="m-l-2 color-white">Settembre 2023 - Gennaio 2024</span></p>
                                     <p class="color-white m-b-1">Social Media Practitioner</p><br>
-                                    <p style="font-size: 15px;"><strong>Social Media Management:<br></strong> Esperienza
+                                    <p style="font-size: 15px;"><strong>Social Media Management:</strong></p><br>
+                                    <p style="font-size: 15px;">Esperienza
                                         nella pianificazione e
                                         programmazione di contenuti per Facebook, LinkedIn, Instagram, Pinterest e
-                                        Google My Business.<br><br>
-
-                                        <strong>Creative Content con AI:<br></strong> Utilizzo di strumenti di
+                                        Google My Business.</p><br>
+                                    <p style="font-size: 15px;"><strong>Creative Content con AI:</strong></p><br>
+                                    <p style="font-size: 15px;">Utilizzo di strumenti di
                                         intelligenza artificiale per produrre contenuti accattivanti per siti web e
-                                        social.<br><br>
-
-                                        <strong>Facebook Business Tools & Suite Management:<br></strong> Gestione del
+                                        social.</p><br>
+                                    <p style="font-size: 15px;"><strong>Facebook Business Tools & Suite
+                                            Management:</strong></p><br>
+                                    <p style="font-size: 15px;">Gestione del
                                         Business Manager di Facebook e della Business Suite per ottimizzare
-                                        operazioni e comunicazione.<br><br>
-
-                                        <strong>Meta Advertising Campaigns:<br></strong> Sviluppo e gestione di campagne
+                                        operazioni e comunicazione.</p><br>
+                                    <p style="font-size: 15px;"><strong>Meta Advertising Campaigns:</strong></p><br>
+                                    <p style="font-size: 15px;">Sviluppo e gestione di campagne
                                         pubblicitarie su piattaforme Meta, con focus su personalizzazione,
-                                        ottimizzazione e budget.<br><br>
-
-                                        <strong>Market Analysis & Strategy Development:<br></strong> Analisi del
+                                        ottimizzazione e budget.</p><br>
+                                    <p style="font-size: 15px;"><strong>Market Analysis & Strategy
+                                            Development:</strong></p><br>
+                                    <p style="font-size: 15px;">Analisi del
                                         comportamento dei clienti per formulare strategie di marketing efficaci,
-                                        migliorando la presenza online dell'azienda.<br><br>
-                                    </p>
+                                        migliorando la presenza online dell'azienda.</p>
 
                                 </div>
                                 <!-- /ITEM -->
@@ -1774,7 +1800,7 @@
                             <div class="seperator-line m-t-1"></div>
 
                             <!-- ACCORDION -->
-                            <ul class="accordion m-b-4"  data-active-index="1" data-slide-Speed="200">
+                            <ul class="accordion m-b-4" data-active-index="1" data-slide-Speed="200">
 
                                 <!-- ACCORDION ITEM -->
                                 <li class="accordion-item scroll-animation">
@@ -2278,7 +2304,8 @@
                                                         <div class="lightbox-images">
 
                                                             <div class="item"
-                                                                data-image="assets/images/work/item-3/banner_1.png"></div>
+                                                                data-image="assets/images/work/item-3/banner_1.png">
+                                                            </div>
                                                         </div>
                                                         <!-- /LIGHTBOX IMAGES -->
 
@@ -2318,28 +2345,27 @@
                                             <div class="work-grid">
 
                                                 <!-- ITEM -->
-                                            <div class="container">
+                                                <div class="container">
 
-                                                <!-- VIDEO PLAYER -->
-                                                <div class="video-player m-t-5" style="border: 1px solid white;">
-                                                    <div class="fullscreen-btn"><span
-                                                            class="ti-layout-width-full"></span></div>
-                                                    <div class="toggle-btn icon-button"><span
-                                                            class="ti-control-play"></span></div>
-                                                    <div class="progress-bar">
-                                                        <div class="fill"></div>
+                                                    <!-- VIDEO PLAYER -->
+                                                    <div class="video-player m-t-5" style="border: 1px solid white;">
+                                                        <div class="fullscreen-btn"><span
+                                                                class="ti-layout-width-full"></span></div>
+                                                        <div class="toggle-btn icon-button"><span
+                                                                class="ti-control-play"></span></div>
+                                                        <div class="progress-bar">
+                                                            <div class="fill"></div>
+                                                        </div>
+
+                                                        <video width="100%" controlsList="nodownload">
+                                                            <source src="assets/videos/video_1.mp4" type="video/mp4">
+                                                        </video>
+
                                                     </div>
-
-                                                    <video width="100%" controlsList="nodownload">
-                                                        <source src="assets/videos/video_1.mp4"
-                                                            type="video/mp4">
-                                                    </video>
+                                                    <!-- /VIDEO PLAYER -->
 
                                                 </div>
-                                                <!-- /VIDEO PLAYER -->
-
-                                            </div>
-                                            <!-- /ITEM -->
+                                                <!-- /ITEM -->
 
                                                 <!-- ITEM -->
                                                 <div class="item noselect work-lightbox scroll-animation m-b-4  m-t-5">
@@ -2373,28 +2399,27 @@
                                                 <!-- /ITEM -->
 
                                                 <!-- ITEM -->
-                                            <div class="container">
+                                                <div class="container">
 
-                                                <!-- VIDEO PLAYER -->
-                                                <div class="video-player m-t-5" style="border: 1px solid white;">
-                                                    <div class="fullscreen-btn"><span
-                                                            class="ti-layout-width-full"></span></div>
-                                                    <div class="toggle-btn icon-button"><span
-                                                            class="ti-control-play"></span></div>
-                                                    <div class="progress-bar">
-                                                        <div class="fill"></div>
+                                                    <!-- VIDEO PLAYER -->
+                                                    <div class="video-player m-t-5" style="border: 1px solid white;">
+                                                        <div class="fullscreen-btn"><span
+                                                                class="ti-layout-width-full"></span></div>
+                                                        <div class="toggle-btn icon-button"><span
+                                                                class="ti-control-play"></span></div>
+                                                        <div class="progress-bar">
+                                                            <div class="fill"></div>
+                                                        </div>
+
+                                                        <video width="100%" controlsList="nodownload">
+                                                            <source src="assets/videos/France.mp4" type="video/mp4">
+                                                        </video>
+
                                                     </div>
-
-                                                    <video width="100%" controlsList="nodownload">
-                                                        <source src="assets/videos/France.mp4"
-                                                            type="video/mp4">
-                                                    </video>
+                                                    <!-- /VIDEO PLAYER -->
 
                                                 </div>
-                                                <!-- /VIDEO PLAYER -->
-
-                                            </div>
-                                            <!-- /ITEM -->
+                                                <!-- /ITEM -->
 
                                                 <!-- ITEM -->
                                                 <div class="item noselect work-lightbox scroll-animation m-b-4  m-t-5">
@@ -2416,7 +2441,8 @@
                                                         <div class="lightbox-images">
 
                                                             <div class="item"
-                                                                data-image="assets/images/work/item-4/spaghetti.png"></div>
+                                                                data-image="assets/images/work/item-4/spaghetti.png">
+                                                            </div>
                                                         </div>
                                                         <!-- /LIGHTBOX IMAGES -->
 
@@ -2447,6 +2473,99 @@
                     </div>
                     <!-- /SECTION ( PORTFOLIO ) -->
 
+                    <!-- SECTION ( ACHIEVEMENTS ) -->
+                    <div class="section" style="padding-bottom:20rem">
+
+
+                        <!-- CONTAINER -->
+                        <div class="container">
+
+
+                            <p class="tag m-b-3 scroll-animation" id="certificates">CERTIFICAZIONI</p>
+                            <h3 class="m-b-4 m-l-1 scroll-animation"
+                                style="color:#C6D4A4; font-weight: 600; display: flex; align-items: center; justify-content: flex-start;">
+                                <i class="fas fa-certificate"
+                                    style="margin-right: 10px; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border: 1px solid black; border-radius: 50%; font-size: 12px; color: #333333;"></i>Le
+                                Mie Qualifiche Accreditate
+                            </h3>
+                            <div class="seperator-line m-b-4 scroll-animation"></div>
+
+
+                            <!-- CARD GRID -->
+                            <div class="card-grid scroll-animation">
+
+
+                                <!-- LEFT SIDE -->
+                                <div>
+
+
+                                    <!-- ITEM -->
+                                    <div class="m-b-5">
+
+                                        <img src="assets/images/talent garden certificate.jpg" class="img-responsive"
+                                            style="width: 100%; height: 100%" alt="logo">
+
+                                    </div>
+                                    <!-- /ITEM -->
+
+                                    <!-- PILLS -->
+                                    <div class="pills m-b-5">
+
+                                        <div class="pill">
+                                            <p class="pill-style">Funnel Marketing</p>
+                                        </div>
+                                        <div class="pill">
+                                            <p class="pill-style">Landing Page</p>
+                                        </div>
+                                        <div class="pill">
+                                            <p class="pill-style">Google Analytics</p>
+                                        </div>
+                                        <div class="pill">
+                                            <p class="pill-style">GA4</p>
+                                        </div>
+                                        <div class="pill">
+                                            <p class="pill-style">Google Ads</p>
+                                        </div>
+                                        <div class="pill">
+                                            <p class="pill-style">Facebook Ads</p>
+                                        </div>
+                                        <div class="pill">
+                                            <p class="pill-style">Content Marketing</p>
+                                        </div>
+                                        <div class="pill">
+                                            <p class="pill-style">SEO & SEM</p>
+                                        </div>
+                                        <div class="pill">
+                                            <p class="pill-style">CRM</p>
+                                        </div>
+                                        <div class="pill">
+                                            <p class="pill-style">Marketing Automation</p>
+                                        </div>
+                                        <div class="pill">
+                                            <p class="pill-style">Email Marketing</p>
+                                        </div>
+                                        <div class="pill">
+                                            <p class="pill-style">Mailchimp</p>
+                                        </div>
+
+                                    </div>
+                                    <!-- /PILLS -->
+
+                                </div>
+                                <!-- /LEFT SIDE -->
+
+                            </div>
+                            <!-- /CARD GRID -->
+
+                            <div class="seperator-line m-b-4 scroll-animation"></div>
+
+                        </div>
+                        <!-- /CONTAINER -->
+
+
+                    </div>
+                    <!-- /SECTION ( ACHIEVEMENTS ) -->
+
 
                     <!-- SECTION ( CUSTOMERS ) -->
                     <div class="section" style="padding-bottom:20rem">
@@ -2455,7 +2574,7 @@
                         <!-- CONTAINER -->
                         <div class="container">
 
-                            <p class="tag m-b-3 scroll-animation">CLIENTI</p>
+                            <p class="tag m-b-3 scroll-animation" id="clients">CLIENTI</p>
                             <h3 class="m-b-4 m-l-1 scroll-animation"
                                 style="color:#C6D4A4; font-weight: 600; display: flex; align-items: center; justify-content: flex-start;">
                                 <i class="fas fa-handshake"
@@ -2698,32 +2817,29 @@
 
                     <!-- SECTION ( FAQ ) -->
                     <div class="section" style="padding-bottom:20rem">
-
-
                         <!-- CONTAINER -->
-                        <div class="container">
-
-
-                            <p class="tag m-b-3 scroll-animation">FAQ</p>
-                            <h3 class="m-b-4 m-l-1 scroll-animation">Do you have questions?</h3>
+                        <div class="container m-b-5">
+                            <p class="tag m-b-3 scroll-animation" id="faq">FAQ</p>
+                            <h3 class="m-b-4 m-l-1 scroll-animation"
+                                style="color:#C6D4A4; font-weight: 600; display: flex; align-items: center; justify-content: flex-start;">
+                                <i class="fas fa-question"
+                                    style="margin-right: 10px; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border: 1px solid black; border-radius: 50%; font-size: 12px; color: #333333;"></i>Hai
+                                delle domande?
+                            </h3>
                             <div class="seperator-line m-b-4 scroll-animation"></div>
-
-
                             <!-- ACCORDION -->
                             <ul class="accordion" data-active-index="1" data-slide-Speed="200">
-
-
                                 <!-- ACCORDION ITEM -->
                                 <li class="accordion-item scroll-animation">
                                     <div class="">
-                                        <h5>Can I purchase for commercial work?</h5>
+                                        <h5>Posso collaborare con te per un progetto commerciale?</h5>
                                         <div class="icon"></div>
                                     </div>
                                     <div>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and
-                                            typesetting industry.
-                                            Lorem Ipsum has been the industry's standard since the
-                                            1500s.</p>
+                                        <p class="p-my-style">Sì, offro servizi di collaborazione freelance per progetti
+                                            commerciali. È
+                                            importante stabilire un rapporto di collaborazione di medio-lungo termine,
+                                            idealmente 6-8 mesi, per ottenere risultati significativi.</p>
                                     </div>
                                 </li>
                                 <!-- /ACCORDION ITEM -->
@@ -2731,14 +2847,14 @@
                                 <!-- ACCORDION ITEM -->
                                 <li class="accordion-item scroll-animation">
                                     <div class="">
-                                        <h5>How does the daily update work?</h5>
+                                        <h5>Qual è la durata minima di una collaborazione?</h5>
                                         <div class="icon"></div>
                                     </div>
                                     <div>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and
-                                            typesetting industry.
-                                            Lorem Ipsum has been the industry's standard since the
-                                            1500s.</p>
+                                        <p class="p-my-style">Per una collaborazione efficace, consiglio un impegno di
+                                            almeno 6-8 mesi.
+                                            Questo permette di sviluppare strategie ben ponderate e di vedere i primi
+                                            risultati tangibili.</p>
                                     </div>
                                 </li>
                                 <!-- /ACCORDION ITEM -->
@@ -2746,14 +2862,15 @@
                                 <!-- ACCORDION ITEM -->
                                 <li class="accordion-item scroll-animation">
                                     <div class="">
-                                        <h5>Do you use long term contracts?</h5>
+                                        <h5>Sei responsabile del successo o fallimento del mio business?</h5>
                                         <div class="icon"></div>
                                     </div>
                                     <div>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and
-                                            typesetting industry.
-                                            Lorem Ipsum has been the industry's standard since the
-                                            1500s.</p>
+                                        <p class="p-my-style">La mia responsabilità è quella di fornire competenze e
+                                            strumenti per il
+                                            miglioramento della presenza digitale. Tuttavia, il successo dell'azienda
+                                            dipende da molti fattori, e non posso garantire il successo o prevenire il
+                                            fallimento aziendale.</p>
                                     </div>
                                 </li>
                                 <!-- /ACCORDION ITEM -->
@@ -2761,27 +2878,24 @@
                                 <!-- ACCORDION ITEM -->
                                 <li class="accordion-item scroll-animation">
                                     <div class="">
-                                        <h5>Can you work full time?</h5>
+                                        <h5>Quanto sono efficaci gli strumenti social per il mio business?</h5>
                                         <div class="icon"></div>
                                     </div>
                                     <div>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and
-                                            typesetting industry.
-                                            Lorem Ipsum has been the industry's standard since the
-                                            1500s.</p>
+                                        <p class="p-my-style">Gli strumenti social sono molto efficaci per incrementare
+                                            la visibilità e
+                                            l'engagement, ma devono essere parte di una strategia più ampia. Non sono la
+                                            soluzione a tutti i problemi ma possono giocare un ruolo cruciale nel tuo
+                                            marketing mix.</p>
                                     </div>
                                 </li>
                                 <!-- /ACCORDION ITEM -->
-
-
                             </ul>
                             <!-- /ACCORDION -->
-
-
                         </div>
                         <!-- /CONTAINER -->
 
-
+                        <div class="seperator-line m-b-4 scroll-animation"></div>
                     </div>
                     <!-- /SECTION ( FAQ ) -->
 
@@ -2794,58 +2908,34 @@
                         <div class="container">
 
 
-                            <p class="tag m-b-3 scroll-animation">CONTACT</p>
-                            <h3 class="m-b-4 m-l-1 scroll-animation">Let’s get in touch.</h3>
+                            <p class="tag m-b-3 scroll-animation">CONTATTAMI</p>
+                            <h3 class="m-b-4 m-l-1 scroll-animation"
+                                style="color:#C6D4A4; font-weight: 600; display: flex; align-items: center; justify-content: flex-start;">
+                                <i class="fas fa-contact-book"
+                                    style="margin-right: 10px; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border: 1px solid black; border-radius: 50%; font-size: 12px; color: #333333;"></i>Per
+                                informazioni
+                            </h3>
                             <div class="seperator-line m-b-4 scroll-animation"></div>
-                            <p class="m-b-6 scroll-animation">Fill out my form below and send me an
-                                email.</p>
+                            <p class="m-b-6 scroll-animation" style="color: white">Compila il form e inviami una email.
+                            </p>
 
-
-                            <!-- FORM -->
-                            <form id="contact-form" action="assets/contact.php" method="post" autocomplete="off">
-
-
-                                <input type="text" id="contact-form-name" class="scroll-animation" name="name"
-                                    placeholder="* Name">
-                                <input type="text" id="contact-form-email" class="scroll-animation m-t-5" name="email"
-                                    placeholder="* E-Mail">
-                                <input data-require-filling="false" type="text" id="contact-form-phone"
-                                    class="scroll-animation m-t-5" name="phone" placeholder="Phone">
-
-                                <!--  HONEYPOT CAPTCHA - FOR SPAM PROTECTION - DO NOT REMOVE THE COUNTRY FIELD -->
-                                <div class="hpc"><input type="text" id="contact-form-country" name="taxid"
-                                        placeholder="* Tax ID"></div>
-                                <!--  / HONEYPOT CAPTCHA - FOR SPAM PROTECTION - DO NOT REMOVE THE COUNTRY FIELD -->
-
-                                <textarea id="contact-form-message" class="scroll-animation m-t-5" name="message"
-                                    placeholder="* Message"></textarea>
-
-                                <!-- BUTTON AREA -->
-                                <div class="button-area m-t-5 scroll-animation">
-
+                            <div class="form-container">
+                                <form id="myForm">
+                                    <input type="text" name="from_name" placeholder=" Nome" required>
+                                    <input type="text" name="from_surname" placeholder=" Cognome" required>
+                                    <input type="email" name="from_email" placeholder=" Email" required>
+                                    <textarea name="message" placeholder=" Messaggio" required></textarea>
                                     <!-- BUTTON -->
-                                    <button type="submit" class="default-button">
-                                        <span class="button-text">Send</span>
-                                        <span class="icon-button m-l-2"><span class="ti-arrow-right"></span></span>
+                                    <button type="submit" class="default-button button-filled m-t-5">
+                                        <span class="ti-arrow-down icon"></span>
+                                        <span class="button-text m-l-2">Invia</span>
                                     </button>
                                     <!-- /BUTTON -->
+                                </form>
+                                <div class="message"></div>
+                            </div>
 
-                                    <p class="small">* Marked fields are required to fill.</p>
-
-                                </div>
-                                <!-- /BUTTON AREA -->
-
-                                <!-- SUCCESS BOX -->
-                                <div class="success-box">
-                                    <div class="icon-button m-r-2"><span class="ti-check"></span></div>
-                                    <p>Your Message has been sent!</p>
-                                </div>
-                                <!-- /SUCCESS BOX -->
-
-
-                            </form>
-                            <!-- /FORM-->
-
+                            <div class="seperator-line m-b-4 scroll-animation"></div>
 
                         </div>
                         <!-- /CONTAINER -->
@@ -2854,113 +2944,8 @@
                     </div>
                     <!-- /SECTION ( CONTACT ) -->
 
-
                 </div>
                 <!-- /SECTION CONTAINER -->
-
-                <!-- SECTION ( ACHIEVEMENTS ) -->
-                <div class="section" style="padding-bottom:20rem">
-
-
-                    <!-- CONTAINER -->
-                    <div class="container">
-
-
-                        <p class="tag m-b-3 scroll-animation">ACHIEVEMENTS</p>
-                        <h3 class="m-b-4 m-l-1 scroll-animation">Acceleration: A rapid increase in valuation and
-                            standards.</h3>
-                        <div class="seperator-line m-b-4 scroll-animation"></div>
-                        <p class="m-b-5 scroll-animation">Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-
-
-                        <!-- CARD GRID -->
-                        <div class="card-grid scroll-animation">
-
-
-                            <!-- LEFT SIDE -->
-                            <div class="left-side">
-
-
-                                <!-- ITEM -->
-                                <div class="item noselect" style="background-color: #181818;">
-
-                                    <!-- ITEM CONTAINER -->
-                                    <div class="item-container">
-                                        <h2>40</h2>
-                                        <p>Awards</p>
-                                    </div>
-                                    <!-- /ITEM CONTAINER -->
-
-                                </div>
-                                <!-- /ITEM -->
-
-
-                                <!-- ITEM -->
-                                <div class="item                                                                                    "
-                                    style="background-color: #080808;">
-
-                                    <!-- ITEM CONTAINER -->
-                                    <div class="item-container">
-                                        <h2>30+</h2>
-                                        <p>Apps</p>
-                                    </div>
-                                    <!-- /ITEM CONTAINER -->
-
-                                </div>
-                                <!-- /ITEM -->
-
-
-                            </div>
-                            <!-- /LEFT SIDE -->
-
-
-                            <!-- RIGHT SIDE -->
-                            <div class="right-side m-t-6">
-
-
-                                <!-- ITEM -->
-                                <div class="item" style="background-color: #111;">
-
-                                    <!-- ITEM CONTAINER -->
-                                    <div class="item-container">
-                                        <h2>90+</h2>
-                                        <p>Projects</p>
-                                    </div>
-                                    <!-- /ITEM CONTAINER -->
-
-                                </div>
-                                <!-- /ITEM -->
-
-
-                                <!-- ITEM -->
-                                <div class="item" style="background-color: #030303;">
-
-                                    <!-- ITEM CONTAINER -->
-                                    <div class="item-container">
-                                        <h2>130%</h2>
-                                        <p>Client ROI</p>
-                                    </div>
-                                    <!-- /ITEM CONTAINER -->
-
-                                </div>
-                                <!-- /ITEM -->
-
-
-                            </div>
-                            <!-- /RIGHT SIDE -->
-
-
-                        </div>
-                        <!-- /CARD GRID -->
-
-
-                    </div>
-                    <!-- /CONTAINER -->
-
-
-                </div>
-                <!-- /SECTION ( ACHIEVEMENTS ) -->
 
 
             </div>
@@ -2974,14 +2959,37 @@
     </div>
     <!-- MAIN -->
 
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            powered with <span class="ti-heart" style="color: red;"></span> by Nicholas Romiti
+        </div>
+    </footer>
+    <!-- FOOTER -->
 
     <!-- JAVASCRIPT FILES -->
     <script src="assets/js/plugins.js"></script>
     <script src="config.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/backgound.js"></script>
-
-
+    <script src="assets/js/emailFormHandler.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "REQKKzC0QqzXRr3kc",
+                blockHeadless: true,
+                blockList: {
+                    // Block the suspended emails
+                    list: ['foo@emailjs.com', 'bar@emailjs.com'],
+                    // The variable contains the email address
+                    watchVariable: 'romitinicholas91@hotmail.it',
+                },
+            });
+        })();
+    </script>
 </body>
 
 </html>
